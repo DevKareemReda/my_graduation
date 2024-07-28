@@ -1,0 +1,389 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Jomhuria&display=swap');
+/* .container {
+  background-color: white;
+} */
+.parent-nav {
+  width: 100%;
+  /* height: 150px; */
+  background-color: #eb3d32;
+  /* display: flex;
+    justify-content: center;
+    align-items: center; */
+  /* position: relative; */
+}
+.parent-nav .container {
+  background-color:#eb3d32 ;
+  /* position: relative;
+    height: 100%;
+    display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.parent-nav .container-one {
+  width: 100%;
+  padding: 35px 0 25px 0;
+}
+.parent-nav .container-one .collumm {
+  padding: 0;
+  margin: 0;
+}
+.parent-nav .container-one .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parent-nav .container-one .logo span {
+  font-size: 30px;
+}
+.parent-nav .container-one .navbar-brand {
+  font-family: "Bangers", cursive;
+  color: white;
+}
+.parent-nav .container-one .search {
+  background-color: white;
+  width: 100%;
+  position: relative;
+}
+.parent-nav .container-one .search input {
+  border: none;
+  width: 90%;
+  height: 100%;
+  padding: 10px;
+}
+.parent-nav .container-one .search .icon_search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #363f4e;
+  position: absolute;
+  right: 0;
+  width: 10%;
+  height: 100%;
+  top: 0;
+}
+.parent-nav .container-one .search i {
+  text-align: center;
+  color: white;
+}
+.parent-nav .container .container-nav {
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  background-color: #363f4e;
+  border-radius: 25px 25px 0 0;
+}
+.fixed-nav{
+  position: fixed;
+  transition: 2s;
+  z-index: 300;
+  box-shadow: 0 2px 3px 0px;
+}
+.parent-nav .container .container-nav .collapse a {
+  position: relative;
+  color: white;
+}
+.parent-nav .container .container-nav .collapse .nav-item {
+  margin: 0 15px 0 15px;
+  transition: 2s;
+  display: flex;
+  align-items: center;
+}
+.parent-nav .container .container-nav .collapse .nav-item .nav-link::after {
+  content: "";
+  width: 100%;
+  height: 2.5px;
+  position: absolute;
+  bottom: -18%;
+  left: 0;
+  transition: 0.5s;
+}
+.parent-nav
+  .container
+  .container-nav
+  .collapse
+  .nav-item
+  .nav-link:hover::after {
+  background-color: #eb3d32;
+  width: 100%;
+  bottom: -5%;
+  position: absolute;
+  transition: 0.5s;
+}
+
+.parent-nav .container .container-nav .collapse a:hover {
+  color: #eb3d32;
+  /* text-decoration: #EB3D32; */
+}
+
+/* end parent one */
+
+/* start parent two */
+.parent-body {
+  height: 2000px;
+  background-color: #f3f3f3;
+}
+.parent-body .container {
+  /* width: 100%; */
+
+  /* z-index: 100; */
+}
+.parent-body .container .container-card 
+{
+    width: 100%;
+    /* height: 2000px; */
+    background-color: white;
+    position: relative;
+    /* height: 300px; */
+}
+.parent-body .container-card .the-card {
+   
+}
+.parent-body .container-card h2 {
+    /* position: absolute;
+    top: 0;
+    right: 0; */
+    float: right;
+    margin: 10px;
+    background-color: #eb3d32;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 10px;
+    font-size: 30px;
+    font-family: 'Jomhuria', cursive;
+    min-width: 150px;
+    text-align: center;
+}
+.clear {
+  clear: both;
+}
+.parent-body .container-card .the-card .col {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+.parent-body .container-card .the-card .col .card {
+    box-shadow: 0px 0px 3px 0px;
+    border: none;
+}
+.parent-body .container-card .the-card .col .card h5 {
+    text-align: center;
+}
+.parent-nav .form-user {
+  height: 45px;
+  width: 45px;
+  background-color: white;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 4px 0px #a50000;
+}
+.parent-nav .form-user i {
+  font-size: xx-large;
+  color: #363f4e;
+}
+/* end parent two */
+
+
+/* start parent-card .................................................. start parent-card */
+.parent-car {
+  margin: auto;
+  border-radius: 10px;
+  /* overflow: hidden; */
+  width: 86%;
+  height: 350px;
+  box-shadow: 0 0 7px 0 #363f4e;
+  border-radius: 10px 10px;
+}
+.parent-car .image-card{
+  width: 100%;
+  height: 70%;
+  position: relative;
+  border-radius: 10px 10px;
+}
+.parent-car .image-card .logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  /* border: 1px solid #eb3d32; */
+}
+.parent-car .image-card .logo img {
+  width: 100%;
+  height: 100%;
+}
+.parent-car .image-card .car {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 6px;
+  background-color: #eb3d32;
+  width: 30%;
+  border-radius: 0 10px 0 0;
+  
+}
+.parent-car .image-card .car h6 {
+  color: white;
+  text-align: center;
+  
+}
+.parent-car hr {
+  margin: 0;
+  box-shadow: 0 0 8px 0.5px;
+
+}
+.parent-car .image-card img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  border-radius: 10px 10px;
+}
+.parent-car .text a {
+  background-color: #eb3d32;
+  color: white;
+}
+.parent-car .text h4 {
+  text-align: center;
+  margin-top: 10px;
+  font-family: serif;
+  color: #363f4e;
+}
+.parent-car .text a {
+  display: block;
+  min-width: 50%;
+  max-width: 65%;
+  margin: auto;
+}
+/* end parent-card .................................................. end parent-card */
+
+/* start space .......................................................start space */
+/* .parent-space{
+  width: 100px;
+  height: 100px;
+}     */
+.parent-body .space {
+      margin-top: 100px;
+      width: 15px;
+    height: 10px;
+    transform: skew( 
+320deg
+ , 
+0deg
+ );
+      background-color: #a50000;
+      margin: auto;
+      overflow: hidden;
+      
+    }
+    .parent-body .parent-space {
+      position: relative;
+      width: 50px;
+      height: 50px;
+      display: flex;
+    justify-content: center;
+    align-items: center;
+      
+    }
+    .parent-body .parent-space::after , .parent-body .parent-space::before {
+      content: '';
+      width: 250%;
+      height: 5px;
+      background-color: #363f4e;
+      position: absolute;
+    }
+    .parent-body .parent-space::after {
+      right: 80%;
+      bottom: -12%;
+      transform: skew( 
+320deg
+ , 
+360deg
+ );
+    }
+    .parent-body .parent-space::before {
+      left: 80%;
+      bottom: -6px;
+      transform: skew(
+320deg
+, 
+0deg
+      );
+    }
+    
+/* end space .......................................................... end space */
+
+/* start sale ........................................................... start sale */
+
+.parent-car .image-card .sale {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  top: -8%;
+  right: -8%;
+  /* border: 1px solid #eb3d32; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eb3d32;
+}
+.parent-car .image-card .sale span {
+    color: white;
+}
+/* end sale ........................................................... end sale */
+
+/* start page newCars ...................................... start page newCars */
+
+.newCars {
+  background-color: #f3f3f3;
+}
+.newCars .container {
+  background-color: white;
+  /* margin: 0; */
+  padding: 0;
+}
+.newCars .card-logo {
+  width: 100%;
+  height: 85%;
+  box-shadow: 0 0 4px 0;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.newCars .card-logo .card-image {
+    width:90%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    /* border: 1px solid black; */
+}
+.newCars .card-logo .card-image img {
+  width: 100%;
+}
+.newCars .card-text h5 {
+  text-align: center;
+  color: #363f4e;
+
+}
+a {
+  text-decoration-line: none;
+  text-decoration: none;
+
+}
+.newCars .card-logo .card-text h5 {
+  text-decoration-line: none;
+  text-decoration: none;
+}
+
+
+
+/* end page newCars ......................................  end page newCars */

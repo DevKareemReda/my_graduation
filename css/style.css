@@ -1,0 +1,1462 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Jomhuria&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+/* .container {
+  background-color: white;
+} */
+body {
+  
+  background-color: #f3f3f3;
+  transition: 0.5s;
+
+}
+.parent-nav {
+  width: 100%;
+  /* height: 150px; */
+  background-color: #eb3d32;
+  /* display: flex;
+    justify-content: center;
+    align-items: center; */
+  /* position: relative; */
+}
+.parent-nav .container {
+  background-color:#eb3d32 ;
+  /* position: relative;
+    height: 100%;
+    display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.parent-nav .container-one {
+  width: 100%;
+  padding: 35px 0 25px 0;
+}
+.parent-nav .container-one .collumm {
+  padding: 0;
+  margin: 0;
+}
+.parent-nav .container-one .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parent-nav .container-one .logo span {
+  font-size: 30px;
+}
+.parent-nav .container-one .navbar-brand {
+  font-family: "Bangers", cursive;
+  color: white;
+}
+.parent-nav .container-one .search {
+  background-color: white;
+  width: 100%;
+  position: relative;
+}
+.parent-nav .container-one .search input {
+  border: none;
+  width: 90%;
+  height: 100%;
+  padding: 10px;
+  outline: none;
+  direction: rtl;
+}
+.parent-nav .container-one .search .icon_search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #363f4e;
+  position: absolute;
+  right: 0;
+  width: 10%;
+  height: 100%;
+  top: 0;
+}
+.parent-nav .container-one .search i {
+  text-align: center;
+  color: white;
+}
+@media(min-width:575px){
+  .parent-nav .container .container-nav {
+    /* position: absolute; */
+    background-color: #363f4e;
+    border-radius: 25px 25px 0 0;
+    width: 100%;
+    left: 0;
+    z-index: 100;
+}
+  .fixed-nav {
+    position: absolute;
+    top: 0;
+  }
+  }
+
+
+.fixed-nav{
+  position: fixed;
+  transition: 2s;
+  z-index: 300;
+  box-shadow: 0 2px 3px 0px;
+}
+.parent-nav .container .container-nav .collapse a {
+  position: relative;
+  color: white;
+}
+.parent-nav .container .container-nav .collapse .nav-item {
+  margin: 0 20px 0 20px;
+  transition: 2s;
+  display: flex;
+  align-items: center;
+}
+.parent-nav .container .container-nav .collapse .nav-item .nav-link::after {
+  content: "";
+  width: 100%;
+  height: 2.5px;
+  position: absolute;
+  bottom: -18%;
+  left: 0;
+  transition: 0.5s;
+}
+.parent-nav
+  .container
+  .container-nav
+  .collapse
+  .nav-item
+  .nav-link:hover::after {
+  background-color: #eb3d32;
+  width: 100%;
+  bottom: -5%;
+  position: absolute;
+  transition: 0.5s;
+}
+
+.parent-nav .container .container-nav .collapse a:hover {
+  color: #eb3d32;
+  /* text-decoration: #EB3D32; */
+}
+.parent-nav .log-user {
+  width: 120px;
+  background-color: #eb3d32;
+  border: 1px solid white;
+  border-radius: 10px;
+  color: white;
+  box-shadow: none;
+}
+.parent-nav .formUser {
+  position: absolute;
+  z-index: 500;
+  background-color: #eb3d32;
+  color: white;
+  left: -41px;
+  top: 50px;
+  border-radius: 10px;
+  width: 230px;
+  border: 1px solid;
+  box-shadow: 0 0 14px -6px black;
+  display: none;
+}
+.parent-nav .formUser input {
+  border-radius: 10px;
+  border: none;
+}
+.parent-nav .formUser .btnForm {
+  background-color: #363f4e;
+  border: none;
+  margin: auto;
+  border-radius: 10px;
+  width: 80%;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+.parent-nav .formUser .new-Account{
+  text-align: center;
+  color: white;
+  margin: auto;
+  /* margin-top: 10px; */
+  /* padding: 33px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+@media (max-width:575px){
+  .parent-nav .container-one .logo {
+    background-color: white;
+    /* color: #363f4e; */
+    margin-bottom: 5px;
+  }
+  .parent-nav .container-one .logo a {
+    color: #363f4e;
+  }
+  .parent-nav .container-one .search {
+    background-color: white;
+    width: 90%;
+    margin: auto;
+    position: relative;
+    border-radius: 10px;
+}
+.parent-nav .container-one .search .icon_search {
+  background-color: #f3f3f3;
+  width: 12%;
+
+}
+.parent-nav .container-one .search .icon_search i {
+  color: #363f4e;
+}
+.container-nav {
+  position: absolute;
+  top: 34px;
+  width: 95%;
+  border-radius: 0;
+  background-color: #ffffff00;
+  border: none;
+  z-index: 5000;
+  left: 12px;
+  text-align: center;
+  transition: 2s;
+}
+.container-nav ul {
+  background-color: #363f4e;
+  /* z-index: 1000; */
+}
+.container-nav ul li {
+  z-index: 112000;
+}
+.container-nav .navbar-toggler {
+  z-index: 1100;
+}
+
+ }  /* end media */
+
+/* end parent one */
+
+/* start parent two */
+.parent-body {
+  height: 2000px;
+  background-color: #f3f3f3;
+}
+
+.parent-body .container .container-card 
+{
+    width: 100%;
+    /* height: 2000px; */
+    background-color: white;
+    position: relative;
+    /* height: 300px; */
+}
+
+.parent-body .container-card h2 {
+    /* position: absolute;
+    top: 0;
+    right: 0; */
+    float: right;
+    margin: 10px;
+    background-color: #eb3d32;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 10px;
+    font-size: 30px;
+    font-family: 'Jomhuria', cursive;
+    min-width: 150px;
+    text-align: center;
+}
+.clear {
+  clear: both;
+}
+.parent-body .container-card .the-card .col {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+.parent-body .container-card .the-card .col .card {
+    box-shadow: 0px 0px 3px 0px;
+    border: none;
+}
+.parent-body .container-card .the-card .col .card h5 {
+    text-align: center;
+}
+.parent-nav .form-user {
+  height: 45px;
+  width: 45px;
+  background-color: white;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 4px 0px #a50000;
+  border: 2px solid white;
+}
+.parent-nav .form-user img {
+  width: 100%;
+}
+.parent-nav .form-user i {
+  font-size: xx-large;
+  color: #363f4e;
+}
+/* end parent two */
+
+
+/* start parent-card .................................................. start parent-card */
+.parent-car {
+  margin: auto;
+  border-radius: 10px;
+  /* overflow: hidden; */
+  width: 86%;
+  height: 350px;
+  box-shadow: 0 0 7px -1px #363f4e;
+  border-radius: 10px 10px;
+  transition: 0.4s;
+}
+.parent-car:hover {
+  box-shadow: 0 0 13px -1px #363f4e;
+}
+.parent-car .image-card{
+  width: 100%;
+  height: 70%;
+  position: relative;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+}
+.parent-car .image-card .logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  /* border: 1px solid #eb3d32; */
+}
+.parent-car .image-card .logo img {
+  width: 100%;
+  height: 100%;
+}
+.parent-car .image-card .car {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 6px;
+  background-color: #eb3d32;
+  width: 30%;
+  border-radius: 0 10px 0 0;
+  
+}
+.parent-car .image-card .car h6 {
+  color: white;
+  text-align: center;
+  
+}
+.parent-car hr {
+  margin: 0;
+  box-shadow: 0 0 8px 0.5px;
+
+}
+.parent-car .image-card img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  border-radius: 10px 10px;
+  transition: 0.4s;
+}
+.parent-car .image-card img:hover {
+  transform: scale(1.05);;
+}
+.parent-car .text a {
+  background-color: #eb3d32;
+  color: white;
+}
+.parent-car .text h4 {
+  text-align: center;
+  margin-top: 10px;
+  font-family: serif;
+  color: #363f4e;
+}
+.parent-car .text a {
+  display: block;
+  min-width: 50%;
+  max-width: 65%;
+  margin: auto;
+}
+/* end parent-card .................................................. end parent-card */
+
+/* start space .......................................................start space */
+/* .parent-space{
+  width: 100px;
+  height: 100px;
+}     */
+.space {
+    margin-top: 100px;
+    width: 15px;
+    height: 10px;
+    transform: skew( 
+                    320deg
+                    , 
+                    0deg
+                    );
+    background-color: #a50000;
+    margin: auto;
+    overflow: hidden;  
+    }
+     .parent-space {
+      position: relative;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    .parent-space::after , .parent-space::before {
+      content: '';
+      width: 250%;
+      height: 5px;
+      background-color: #363f4e;
+      position: absolute;
+    }
+    .parent-space::after {
+      right: 80%;
+      bottom: -12%;
+      transform: skew( 
+320deg
+ , 
+360deg
+ );
+    }
+    .parent-space::before {
+      left: 80%;
+      bottom: -6px;
+      transform: skew(
+320deg
+, 
+0deg
+      );
+    }
+    
+/* end space .......................................................... end space */
+
+/* start sale ........................................................... start sale */
+
+.parent-car .image-card .sale {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  /* border: 1px solid #eb3d32; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eb3d32;
+}
+.parent-car .image-card .sale span {
+    color: white;
+    font-family: fangsong;
+
+}
+/* end sale ........................................................... end sale */
+
+/* start page newCars ...................................... start page newCars */
+
+.newCars {
+  background-color: white;
+}
+ .container .newCars {
+  background-color: white;
+  /* margin: 0; */
+  padding: 0;
+}
+.newCars .card-logo {
+  width: 70%;
+  height: 75%; 
+  /* box-shadow: 0 0 4px 0; */
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s;
+}
+
+.newCars .card-logo:hover {
+  background-color: #f3f3f3;
+  /* opacity: 0.4; */
+  z-index: 1000;
+}
+.newCars .card-logo .card-image {
+    width:90%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    /* border: 1px solid black; */
+}
+.newCars .card-logo .card-image img {
+  width: 100%;
+}
+.newCars .card-text h5 {
+  text-align: center;
+  color: #363f4e;
+
+}
+a {
+  text-decoration-line: none;
+  text-decoration: none;
+
+}
+.newCars .card-logo .card-text h5 {
+  text-decoration-line: none;
+  text-decoration: none;
+}
+
+
+
+/* end page newCars ......................................  end page newCars */
+
+/* start scrollUp */
+html {
+  scroll-behavior: smooth;
+}
+  #scroll {
+    transition: 0.7s;
+  }
+  .scrollUp {
+    /* display: none; */
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #eb3d32;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    border-radius: 4px;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    pointer-events:auto;
+  }
+/* end scrollUp */
+.scrollUp i {
+  color: white;
+}
+
+/* .............................. start card newCars brands */
+.card-cars {
+  width: 100%;
+}
+.card-cars h5 {
+  float: right;
+  margin: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #000000ad;
+}
+.clear {
+  clear: both;
+}
+.card-cars .card-card {
+  width: 70%;
+  height: 180px;
+  margin: 30px;
+  box-shadow: 0 0 10px -5px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto 25% ;
+  border-radius: 10px;
+  overflow: auto;
+  transition: 0.3s;
+}
+.card-cars .card-card:hover {
+  box-shadow: 0 0 15px -5px;
+
+}
+
+.card-cars .card-card .card-image {
+  
+  /* background-color: #a50000; */
+  order: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.5s;
+  border-left: 1px solid #0000001f;
+
+}
+.card-cars .card-card .card-image img {
+  width: 100%;
+  /* height: 100%; */
+  transition: 0.5s;
+  /* padding:20px; */
+ 
+}
+.card-cars .card-card .card-image img:hover{
+  transform: scale(1.05);;
+}
+.card-cars .card-card .card-text {
+  /* background-color: aqua; */
+  order: 1;
+}
+.card-cars .card-card .card-text .header-car {
+  width: 100%;
+  display: inline-block;
+
+}
+.card-cars .card-card .card-text .header-car h5 {
+  margin-right: 15px;
+}
+.card-cars .card-card .form-card {
+  display:grid;
+  grid-template-columns: auto 10% auto auto;
+  margin: 0 5px 0 3px;
+}
+.card-cars .card-card .form-card .price {
+  order: 4;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  justify-content: space-evenly;
+  font-family: cursive;
+  background-color: #0000000a;
+  border-radius: 20px;
+}
+.card-cars .card-card .form-card .price .larg {
+  display: inline-block;
+  order: 2;
+  
+}
+.card-cars .card-card .form-card span {
+  display: block;
+}
+.card-cars .card-card .form-card .installment {
+  order: 3;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  justify-content: space-evenly;
+  font-family: cursive;
+
+}
+.card-cars .card-card .form-card .installment .larg {
+  order: 2;
+}
+
+.card-cars .card-card .form-card .btn-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  order: 1;
+}
+.card-cars .card-card .form-card .btn-details a {
+  background-color: #eb3d32;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+}
+.card-cars .card-card .form-card .btn-details a:hover {
+  background-color: #c02418;
+}
+.card-cars .card-card .form-card .vs {
+  order: 2;
+  margin: auto;
+  text-align: center;
+}
+.card-cars .card-card .form-card .vs span {
+  color: #363f4e;
+  font-family: cursive;
+}
+.card-cars .card-card .form-card .vs button {
+  color: #eb3d32;
+  padding: 0;
+  box-shadow: none;
+}
+
+
+@media (max-width:991px){
+  .card-cars .card-card {
+    width: 85%;
+  }
+}
+@media (max-width:767px){
+  .card-cars .card-card {
+    width: 95%;
+  }
+
+}
+@media (max-width:530px){
+  .card-cars .card-card {
+    grid-template-columns: 71% 29%;
+    width: 90%;
+  }
+
+  .card-cars .card-card .card-image img {
+    width: 100%
+  }
+  .card-cars .card-card .card-text .header-car h5 {
+    font-size: 16px;
+    margin: 15px 15px 10px 0;
+  }
+  .card-cars .card-card .form-card {
+    grid-template-rows: auto auto auto;
+    grid-template-columns: none;
+    font-size: smaller;
+  }
+  .card-cars .card-card .form-card .price {
+    order: 1;
+  }
+  .card-cars .card-card .form-card .installment {
+    order: 2;
+  }
+  .card-cars .card-card .form-card .btn-details {
+    order: 3;
+    
+  }
+  .card-cars .card-card .form-card .btn-details a  {
+    font-size: small;
+    margin-top: 6px;
+  }
+}
+
+/* .............................. end card newCars brands */
+
+
+/* ............................... start user */
+.container .the-user {
+  display: grid;
+  grid-template-columns: auto 23%;
+  margin-top: 20px;
+}
+.sidebar-user {
+  background-color: white;
+  order: 2;
+  color: #363f4e;
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 5px;
+  margin-left: 20px;
+
+}
+.sidebar-user .navbar-nav {
+  width: 100%;
+  /* padding-right: 10px; */
+  color: #363f4e;
+}
+.sidebar-user .navbar-nav a {
+  text-align: right;
+  color: #363f4e;
+  padding: 10px;
+}
+.sidebar-user .navbar-nav a i {
+  margin: 0 5px;
+
+}
+.sidebar-user .navbar-nav a:hover {
+  background-color: #eb3d32;
+  color: white;
+  border-radius: 5px;
+}
+.body-user{
+  background-color: white;
+  order: 1;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.body-user span {
+  display: block;
+  font: initial;
+  font-size: x-large;
+}
+.body-user i {
+  margin-left: 10px;
+  font-size: 40px;
+  color: #eb3d32;
+}
+.evaluation {
+  width: 100%;
+  height: 130px;
+  background-color: white;
+  order: 3;
+  margin-top: 20px;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  
+  direction: rtl;
+}
+.evaluation .data-eva div {
+height: 70%;
+/* width: 50px; */
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.evaluation .data-eva {
+  box-shadow: 1px 0px 4px -4px;
+  overflow: hidden;
+  /* width: calc(100% / 5); */
+}
+.evaluation .data-eva span {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  font-weight: 900;
+  color: #363f4e;
+}
+
+.evaluation .data-eva div i {
+  font-size: 50px;
+  color: #eb3d32;
+}
+.evaluation .data-eva:hover {
+  background-color: #eb3e3218;
+  color: white;
+}
+
+/* ............................... end user */
+
+
+/* start details car ........................................start details car */
+
+.car-details {
+  background-color: white;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+@media(min-width:575px){
+  
+}
+
+ 
+
+.car-details .car-image{
+  width: 100%;
+  margin-left: 10px;
+}
+.car-image img {
+  width: 100%;
+  display:block;
+}
+.image-display {
+  overflow: hidden;
+  height: 350px;
+  width: 80%;
+  margin: 20px auto 5px auto;
+  box-shadow: 0 0 9px -5px black;
+  border-radius: 10px;
+}
+.image-showcase { 
+  display: flex;
+  width: 100%;
+  transition: all 0.5s ease;
+  height: 100%;
+  margin: auto;
+}
+.image-showcase img {
+  min-width:100%;
+  /* height: 100%; */
+
+}
+.image-select {
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 11px -6px;
+  border-radius: 10pc;
+  overflow: hidden;
+  margin-top: 12px;
+  max-height: 70px;
+}
+.image-select .image-items {
+  margin: 0.3rem;
+}
+.image-select .image-items:nth-child(1),
+.image-select .image-items:nth-child(2),
+.image-select .image-items:nth-child(3),
+.image-select .image-items:nth-child(4),
+.image-select .image-items:nth-child(5),
+.image-select .image-items:nth-child(6) {
+  margin-right: 0;
+  border-right: 1px solid #00000026;
+}
+.image-select .image-items:hover {
+  opacity: 0.8;
+}
+
+.car-details .car-text h5 {
+  padding: 22px 32px;
+  color: #363f4e;
+  text-align: right;
+}
+.car-details .car-text .details {
+  text-align: right;
+}
+.car-details .car-text .details div {
+  line-height: 1.7;
+  margin-right: 45px;
+  background-color: #f3f3f3;
+  padding: 5px 15px;
+  margin-bottom: 5px;
+  width: 80%;
+  float: right;
+  border-bottom: inset;
+  border-radius: 4px;
+}
+.car-details .car-text .details h6 {
+  display: inline-block;
+  order: 1;
+  color: #eb3d32;
+  font-weight: bolder;
+}
+.car-details .car-text .details span {
+  order: 2;
+  display: inline-block;
+  color: #363f4e;
+  font-weight: 500;
+}
+.car-details .car-text .details svg {
+  height: 20px;
+  width: 20px;
+  /* color: #eb3d32; */
+  /* background-color: #eb3d32; */
+}
+/* .buy-vs {
+  position: relative;
+} */
+/* .buy-vs .vs {
+  position: absolute;
+  right: 0;
+  color: white;
+  background-color: #eb3d32;
+  /* border-radius: 50%; */
+/* } */ 
+.buy-btn {
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+
+}
+.buy-btn .btn-buy {
+  background-color: #eb3d32;
+  color: white;
+  position: relative;
+  width: 180px;
+  box-shadow: none;
+  /* margin: auto; */
+  /* margin-top: 20px; */
+}
+.buy-btn .btn {
+  box-shadow: none;
+}
+.buy-btn .btn-buy::after,.buy-btn .btn-buy::before {
+  width: 15%;
+  height: 4px;
+  background-color: #eb3d32;
+  content: '';
+  transition: 0.7s;
+
+
+}
+.buy-btn .btn-buy::after {
+  position: absolute;
+  top: -7px;
+  left: 0;
+}
+.buy-btn .btn-buy::before {
+  position: absolute;
+  bottom: -7px;
+  right: 0;
+}
+.buy-btn .btn-buy:hover::after
+,.buy-btn .btn-buy:hover::before {
+  width: 100%; 
+}
+.buy-btn .modal-footer .btns:hover {
+  background-color: #a50000;
+}
+
+/* end details car ........................................end details car */
+
+/* start vsCar .......................................... start vsCar */
+
+.vsCar {
+  position: fixed;
+  left: -150px;
+  bottom: 0;
+  background-color: white;
+  color: black;
+  /* height: 200px; */
+  width: 150px;
+  border-radius: 0 7px 0 0;
+  overflow: hidden;
+  /* transition: all 0.5s; */
+  /* display: none; */
+}
+.moveCar {
+  left: 0;
+}
+.vsCar .header-vs {
+  background-color: #eb3d32;
+  color: white;
+  padding: 5px 0;
+  text-align: center;
+  position: relative
+}
+.vsCar .header-vs span {
+  margin-right: 29px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.vsCar .header-vs i {
+  background-color: #363f4e;
+  color: white;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 10px;
+  height: 100%;
+  border-radius: 0;
+}
+.vsCar .image-vs {
+  width: 80%;
+  height: 100px;
+  margin: auto;
+}
+.vsCar .image-vs img {
+  width: 100%;
+  height: 100%;
+}
+.vsCar .body-text {
+  width: 100%;
+  margin-top: 2px;
+}
+.vsCar .body-text h5 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 900;
+  font-family: noto-arabic,sans-serif!important;
+}
+.vsCar .location-vs {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+.vsCar .location-vs .btn {
+  background-color: #eb3d32;
+  color: white;
+  margin: auto;
+  margin-bottom: 10px;
+  padding: 5px 0;
+  width: 50%;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.vsCar hr {
+  margin-top: 2rem;
+    margin-bottom: 0;
+}
+.vsCar .vs2 {
+  display: none;
+}
+
+/* end vsCar .......................................... end vsCar */
+
+/* start used Cars ........................................... start used Cars */
+
+.cards {
+  direction: rtl;
+  float: right;
+  margin-bottom: 10px;
+  margin-right: 15px;
+  clear: both;
+}
+
+.effect {
+  width: 100%;
+  padding: 60px 0;
+}
+
+samp {
+  display: inline-block;
+  background: #F6F6F6;
+  font-size: 14px;
+  padding: 1px 8px;
+  border-radius: 16px;
+  font-family: "Cairo" !important;
+  margin-left: 8px;
+  font-weight: 600;
+}
+
+samp.right {
+  background: #4A4A4A;
+  color: #FFF;
+}
+
+.clear {
+  clear: both;
+}
+
+@media (max-width: 767px) {
+  .cards {
+    margin-right: 7px;
+  }
+}
+
+@media (max-width: 500) {
+  .cards {
+    margin-right: 4px;
+  }
+}
+
+.radius2 {
+  border-radius: 10px 10px 0 0;
+}
+
+.header-footer {
+  clear: both;
+}
+
+.header-footer {
+  clear: both;
+  background: #F6F6F6;
+  padding: 5px 10px;
+  height: 52px;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  direction: rtl;
+  align-items: center;
+}
+
+.flex p {
+  margin: 0;
+}
+
+span.span {
+  display: block;
+  font-size: 11px;
+  font-weight: bold;
+  color: #4dadaf;
+}
+
+.tel {
+  margin: 9px;
+}
+
+.tel-number{
+  color: #eb3d32;
+  font-size: 16px;
+  font-weight: bold;
+}
+.effect a {
+  text-decoration: none;
+  box-shadow: none;
+  border: none;
+  color: #363f4e;
+}
+
+/* end used Cars ........................................... end used Cars */
+.bodyAccount{
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+.newAccount {
+  margin: auto;
+  width: 500px;
+  /* height: 420px; */
+  background-color: #f3f3f3;
+  border-radius: 30px;
+  box-shadow: 0 0 40px -15px;
+}
+.newAccount .new-form span {
+  margin: 30px 0 15px 0;
+  font-weight: 700;
+  font-family: unset;
+  /* font-size: 16px; */
+  color: #363f4e;
+  margin-left: 35px;
+}
+.newAccount form {
+  margin: auto;
+}
+.newAccount div div  {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.newAccount .form {
+  width: 100%;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+ .newAccount .new-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+ .newAccount input {
+  border-radius: 20px;
+  padding: 10px;
+  border: none;
+  box-shadow: 0 0 8px -4px;
+  width: 100%;
+  outline: none;
+ }
+ .newAccount input:hover {
+   border: none;
+ }
+.newAccount .name-phone {
+  margin: auto;
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: center; */
+  width: 80%;
+  margin-bottom: 20px;
+}
+.newAccount .name-phone input {
+    width: 90%;
+}
+.newAccount .name-phone input:first-child {
+  margin-left: 5px;
+}
+.newAccount .name-phone input:last-child {
+  margin-right: 5px;
+}
+
+.newAccount .email {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  width: 80%;
+  margin:auto;
+  margin-bottom: 20px;
+}
+.newAccount .password {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  width: 80%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.newAccount .password input { 
+  width: 100%;
+}
+.newAccount div {
+  margin-bottom: 20px;
+}
+.newAccount .image input {
+  box-shadow: 0 0 0 0;
+}
+.newAccount .btn-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.newAccount .btn-form .btn {
+  background-color: #eb3d32;
+  color: white;
+  width: 40%;
+  border-radius: 30px;
+  padding: 7px;
+  font-weight: 700;
+}
+.newAccount .gender {
+  /* width: 100%; */
+  margin-left: 100px;
+  float: right;
+}
+.newAccount .gender div {
+  display: inline;
+  direction: rtl;
+}
+.newAccount .gender input {
+  width: 10%;
+}
+.newAccount .image span {
+  /* direction: rtl; */
+  float: right;
+  margin-right: 10px;
+  color: #a50000;
+  font-weight: bolder;
+}
+.newAccount .email .place {
+  box-shadow: 0 0 11px -3px #a50000;
+}
+.newAccount .email .place::placeholder {
+  color: #a50000;
+}
+.conVs {
+height: 80vh;
+}
+.conVs h3 {
+  display: flex;
+  justify-content: center;
+  color: #eb3d32;
+}
+.conVs .inputs {
+  display: flex;
+  justify-content: center;
+}
+.conVs .inputs div {
+  width: 40%;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 0 15px;
+  padding: 7px;
+  font-weight: bolder;
+  color: #363f4e;
+  position: relative;
+  cursor: pointer;
+}
+.conVs .inputs div span {
+  position: absolute ;
+  left: 10px;
+}
+.inputSearch {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.inputSearch input {
+  width: 39%;
+  text-align: center;
+  border: 1px solid black;
+  /* border-radius: 10px; */
+  margin: 3px 18px 0 18px;
+  padding: 3px;
+  font-weight: bolder;
+  color: #363f4e;
+}
+.lests {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  
+}
+.lests div {
+  width: 39%;
+  text-align: center;
+  border: 1px solid black;
+  /* border-radius: 10px; */
+  margin: 3px 18px 0 18px;
+  padding: 3px;
+  font-weight: bolder;
+  color: #363f4e;
+  overflow: auto ;
+  max-height: 200px;
+}
+.lests div li {
+  list-style: none;
+}
+.lests li {
+  cursor: pointer;
+}
+.lests li:hover {
+  background-color: #eb3d32;
+  color: white;
+}
+.conVs .btn-vs {
+  display: flex;
+  align-items: center;
+  margin: 50px auto 0 auto;
+  background-color: #eb3d32;
+  color: white;
+  justify-content: center;
+  width: 150px;
+  text-align: center; 
+}
+.swal2-styled.swal2-confirm {
+  background-color: #eb3d32;
+}
+.formBuy {
+  position: absolute;
+  top: -100px;
+  left: 42%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 180px;
+  background-color: #eb3d32;
+  text-align: center;
+  color: white;
+  direction: rtl;
+  border: 1px solid white;
+  border-radius: 10px;
+  box-shadow: 0 0 35px -7px #363f4e;
+  display: none;
+  /* transition: 1.5s; */
+}
+.showFormBuy {
+  display: block;
+  /* top: 200px; */
+  /* transition: 1.5s; */
+  
+  
+}
+.formBuy form {
+  height: 100%;
+}
+.formBuy input {
+  border: none;
+  border-radius: 3px;
+  padding: 3px 0;
+  margin: 5px;
+  outline: none;
+  direction: ltr;
+}
+.formBuy input::placeholder {
+  text-align: center;
+}
+.formBuy .btn {
+  background-color: #363f4e;
+  color: white;
+  margin-top: 13px;
+  width: 30%;
+  border-radius: 15px;
+}
+.formBuy label {
+  font-family: inherit;
+}
+.formBuy input:first-child {
+  margin-top: 30px;
+}
+.formBuy i {
+  position: absolute;
+    top: 6px;
+    right: 8px;
+    cursor: pointer;
+}
+.productsCheck {
+  padding: 150px 0 150px 0;
+    text-align: center;
+    font-size: 30px;
+    font-family: initial;
+    font-weight: bold;
+    color: #eb3d32;
+}

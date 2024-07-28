@@ -1,0 +1,25 @@
+
+الاسم
+السنه
+السعر
+أقل مقدم
+أقل قسط
+سعة الموتور
+horse bower حصان ميكانيكي
+max speed : أقصي سرعة
+transmission : ناقل الحركه
+speed : السرعات
+fuel : الوقود
+fuelcon : السرعات
+origin : بلد المنشأ
+assembled : بلد التجميع
+acceleration : التسارع
+lenght : الطول
+width : العرض 
+height : الإرتفاع
+ground Clernce : إرتفاع السيارة عن الأرض 
+ground Clernce : قاعدة العجلات
+trunkSize : حجم الشنطه
+seats : عدد المقاعد
+tractionType : نوع الجر
+image : الصوره
